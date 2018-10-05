@@ -11,7 +11,20 @@
 </head>
 <body>
     <div>
-    <h1>Hej Med dig ^^</h1>
-    </div>
+        <h1>@ViewBag.Title</h1>
+
+        <h5>Description:</h5>
+        <div>@ViewBag.Description</div>
+
+        <h5>Characters:</h5>
+        <div>
+            <ul>
+                @foreach (var art in ViewBag.Characters)
+                {
+                    <li>@art</li>
+                }
+
+            </ul>
+        </div>
 </body>
 </html>
