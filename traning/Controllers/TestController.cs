@@ -8,9 +8,9 @@ namespace traning.Controllers
 {
     public class TestController : Controller
     {
-        public string kage()
+        public ActionResult kage()
         {
-            return "hej med dig";
+            return View();
         }
     }
 }
